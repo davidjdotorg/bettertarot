@@ -1,0 +1,9 @@
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+h1 {
+    padding:12px;
+}
+p {
+    margin:14px;
+}
