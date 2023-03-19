@@ -9,3 +9,6 @@ p {
     border:6px solid black;
     border-radius:4px;
 }
+.navbar-expand-sm .navbar-collapse {
+    justify-content: center;
+}
