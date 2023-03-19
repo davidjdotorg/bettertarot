@@ -8,6 +8,7 @@ p {
 .row div img {
     border:6px solid black;
     border-radius:4px;
+    margin:3px;
 }
 .navbar-expand-sm .navbar-collapse {
     justify-content: center;
