@@ -17,7 +17,7 @@ p {
 .container-fluid h1 {
     text-align:center;
 }
-main {
+body {
     background-color:black;
     color:white;
 }
