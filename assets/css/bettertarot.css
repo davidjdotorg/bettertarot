@@ -4,6 +4,8 @@ h1 {
 p {
     margin:14px;
 }
-.col p a img {
-    border:5px solid black;
+.col p a img,
+.row div img {
+    border:6px solid black;
+    border-radius:4px;
 }
