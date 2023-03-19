@@ -13,3 +13,7 @@ p {
 .navbar-expand-sm .navbar-collapse {
     justify-content: center;
 }
+.container-fluid h1 p,
+.container-fluid h1 {
+    text-align:center;
+}
