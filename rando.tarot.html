@@ -1,93 +1,143 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Random Tarot Card Pull</title>
-        <script>
-            const objCard = [
-                "arcana.00.fool.html",
-                "arcana.01.magician.html",
-                "arcana.02.highpriestess.html",
-                "arcana.03.empress.html",
-                "arcana.04.emperor.html",
-                "arcana.05.hierophant.html",
-                "arcana.06.lovers.html",
-                "arcana.07.chariot.html",
-                "arcana.08.strength.html",
-                "arcana.09.hermit.html",
-                "arcana.10.wheel.html",
-                "arcana.11.justice.html",
-                "arcana.12.hangedman.html",
-                "arcana.13.death.html",
-                "arcana.14.temperance.html",
-                "arcana.15.devil.html",
-                "arcana.16.tower.html",
-                "arcana.17.star.html",
-                "arcana.18.moon.html",
-                "arcana.19.sun.html",
-                "arcana.20.judgment.html",
-                "arcana.21.world.html",
-                "pentacles.01.html",
-                "pentacles.02.html",
-                "pentacles.03.html",
-                "pentacles.04.html",
-                "pentacles.05.html",
-                "pentacles.06.html",
-                "pentacles.07.html",
-                "pentacles.08.html",
-                "pentacles.09.html",
-                "pentacles.10.html",
-                "pentacles.king.html",
-                "pentacles.queen.html",
-                "pentacles.knight.html",
-                "pentacles.page.html",
-                "swords.01.html",
-                "swords.02.html",
-                "swords.03.html",
-                "swords.04.html",
-                "swords.05.html",
-                "swords.06.html",
-                "swords.07.html",
-                "swords.08.html",
-                "swords.09.html",
-                "swords.10.html",
-                "swords.king.html",
-                "swords.queen.html",
-                "swords.knight.html",
-                "swords.page.html",
-                "cups.01.html",
-                "cups.02.html",
-                "cups.03.html",
-                "cups.04.html",
-                "cups.05.html",
-                "cups.06.html",
-                "cups.07.html",
-                "cups.08.html",
-                "cups.09.html",
-                "cups.10.html",
-                "cups.king.html",
-                "cups.queen.html",
-                "cups.knight.html",
-                "cups.page.html",
-                "wands.01.html",
-                "wands.02.html",
-                "wands.03.html",
-                "wands.04.html",
-                "wands.05.html",
-                "wands.06.html",
-                "wands.07.html",
-                "wands.08.html",
-                "wands.09.html",
-                "wands.10.html",
-                "wands.king.html",
-                "wands.queen.html",
-                "wands.knight.html",
-                "wands.page.html",
-            ];
-            const randIndex = Math.floor(Math.random() * objCard.length);
-            const randKey = objCard[randIndex];
-            location.href = randKey;
-        </script>
-    </head>
-    <body>
-        Please enable JavaScript.
+<head>
+<title>Intuition Guidebook - Random Tarot Card Pull</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="og:site_name" content="Better Tarot" />
+<meta name="og:title" content="Pull a Random Tarot Card" />
+<meta name="og:description" content="Use this easy tool to pull yourself a tarot card" />
+<meta name="og:url" content="https://www.davidj.org/tarot/arcana.00.fool.html" />
+<meta name="article:tag" content="tarot" />
+<meta name="og:image" content="https://www.davidj.org/tarot/img/ar00.jpg" />
+<meta name="og:image:width" content="150" />
+<meta name="og:image:height" content="260" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/bettertarot.css">
+<script>
+    const objCard = [
+        "arcana.00.fool.html",
+        "arcana.01.magician.html",
+        "arcana.02.highpriestess.html",
+        "arcana.03.empress.html",
+        "arcana.04.emperor.html",
+        "arcana.05.hierophant.html",
+        "arcana.06.lovers.html",
+        "arcana.07.chariot.html",
+        "arcana.08.strength.html",
+        "arcana.09.hermit.html",
+        "arcana.10.wheel.html",
+        "arcana.11.justice.html",
+        "arcana.12.hangedman.html",
+        "arcana.13.death.html",
+        "arcana.14.temperance.html",
+        "arcana.15.devil.html",
+        "arcana.16.tower.html",
+        "arcana.17.star.html",
+        "arcana.18.moon.html",
+        "arcana.19.sun.html",
+        "arcana.20.judgment.html",
+        "arcana.21.world.html",
+        "pentacles.01.html",
+        "pentacles.02.html",
+        "pentacles.03.html",
+        "pentacles.04.html",
+        "pentacles.05.html",
+        "pentacles.06.html",
+        "pentacles.07.html",
+        "pentacles.08.html",
+        "pentacles.09.html",
+        "pentacles.10.html",
+        "pentacles.king.html",
+        "pentacles.queen.html",
+        "pentacles.knight.html",
+        "pentacles.page.html",
+        "swords.01.html",
+        "swords.02.html",
+        "swords.03.html",
+        "swords.04.html",
+        "swords.05.html",
+        "swords.06.html",
+        "swords.07.html",
+        "swords.08.html",
+        "swords.09.html",
+        "swords.10.html",
+        "swords.king.html",
+        "swords.queen.html",
+        "swords.knight.html",
+        "swords.page.html",
+        "cups.01.html",
+        "cups.02.html",
+        "cups.03.html",
+        "cups.04.html",
+        "cups.05.html",
+        "cups.06.html",
+        "cups.07.html",
+        "cups.08.html",
+        "cups.09.html",
+        "cups.10.html",
+        "cups.king.html",
+        "cups.queen.html",
+        "cups.knight.html",
+        "cups.page.html",
+        "wands.01.html",
+        "wands.02.html",
+        "wands.03.html",
+        "wands.04.html",
+        "wands.05.html",
+        "wands.06.html",
+        "wands.07.html",
+        "wands.08.html",
+        "wands.09.html",
+        "wands.10.html",
+        "wands.king.html",
+        "wands.queen.html",
+        "wands.knight.html",
+        "wands.page.html",
+    ];
+    const randIndex = Math.floor(Math.random() * objCard.length);
+    const randKey = objCard[randIndex];
+    setTimeout("location.href = randKey",2800);
+</script>
+</head>
+<body>
+	<main>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">Main</a>
+							</li>
+							<li class="nav-item">
+								<a href="arcana.html" class="nav-link">Arcana</a>
+							</li>
+							<li class="nav-item">
+								<a href="cups.html" class="nav-link">Cups</a>
+							</li>
+							<li class="nav-item">
+								<a href="pentacles.html" class="nav-link">Pentacles</a>
+							</li>
+							<li class="nav-item">
+								<a href="swords.html" class="nav-link active">Swords</a>
+							</li>
+							<li class="nav-item">
+								<a href="wands.html" class="nav-link">Wands</a>
+							</li>
+							<li class="nav-item">
+								<a href="rando.tarot.html" class="nav-link">Random</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container-fluid">
+			<h1>Please Wait.</h1>
+        </div>
     </body>
 </html>
