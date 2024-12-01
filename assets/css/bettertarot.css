@@ -23,3 +23,6 @@ body {
 a, a:visited {
     color:cornsilk;
 }
+div.text-center div.col-12 p {
+    max-width:90%;
+}
