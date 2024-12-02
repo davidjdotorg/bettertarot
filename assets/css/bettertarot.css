@@ -26,3 +26,9 @@ a, a:visited {
 div.text-center div.col-12 p {
     max-width:90%;
 }
+
+/* I'm using different colors for different influences. */
+
+.hermetic-principle {
+    color: #ffd700;
+}
