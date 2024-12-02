@@ -1,8 +1,18 @@
+body {
+    background-color:black;
+    color:white;
+}
+main {
+    width:99%;
+}
 h1 {
     padding:12px;
 }
 p {
     margin:14px;
+}
+a, a:visited {
+    color:cornsilk;
 }
 .col p a img,
 .row div img {
@@ -15,16 +25,6 @@ p {
 }
 .container-fluid h1 {
     text-align:center;
-}
-body {
-    background-color:black;
-    color:white;
-}
-a, a:visited {
-    color:cornsilk;
-}
-div.text-center div.col-12 p {
-    max-width:90%;
 }
 
 /* I'm using different colors for different influences. */
